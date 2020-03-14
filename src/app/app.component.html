@@ -1,3 +1,21 @@
-<h1>Principle Code Challenge</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <app-nav></app-nav>
 
-<button class="btn btn-primary">Hello</button>
+      <h1>Principle Code Challenge</h1>
+
+      <button
+        *ngIf="false"
+        class="btn btn-primary"
+        [ngClass]="{ 'new-class': items.length, default: !items.length }"
+      >
+        Hello
+      </button>
+
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let item of items">{{ item }}</li>
+      </ul>
+    </div>
+  </div>
+</div>

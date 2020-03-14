@@ -1,14 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { MoviesComponent } from './movies/movies.component';
+import { CinemasComponent } from './cinemas/cinemas.component';
+import { NavComponent } from './nav/nav.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MoviesComponent,
+    CinemasComponent,
+    NavComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
