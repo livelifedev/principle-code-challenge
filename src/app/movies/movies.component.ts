@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { moviesData } from '../../mocks/mockData';
 
 @Component({
   selector: 'app-movies',
@@ -6,10 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./movies.component.css']
 })
 export class MoviesComponent implements OnInit {
+  constructor() {}
+  movies = moviesData;
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
