@@ -5,7 +5,12 @@ export const moviesData = [
     year: 2004,
     genre: 'Action|Drama',
     poster: 'http://dummyimage.com/400x600.jpg/ff4444/ffffff',
-    showtimes: ['11:05 AM', '2:56 PM', '6:39 PM']
+    // maybe just have in cinema mock data and query movie by ID, so dont need to copy logic twice
+    cinemasPlaying: [
+      { id: 1, name: '', showtimes: ['11:05 AM', '2:56 PM', '6:39 PM'] }
+    ]
+    // movies: [{id: 1, showtimes: ['11:05 AM', '2:56 PM', '6:39 PM'] }]
+    // filter through list with movie id to get times
   },
   {
     id: 2,

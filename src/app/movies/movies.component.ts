@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { moviesData } from '../../mocks/mockData';
+import { moviesData } from '../../mocks/mock-data';
 
 @Component({
   selector: 'app-movies',
