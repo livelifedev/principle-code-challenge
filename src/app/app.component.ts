@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { moviesData } from '../mocks/mockData';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'principle';
+  movies = moviesData;
   items = ['movie 1', 'movie 2', 'movie 3'];
 }
