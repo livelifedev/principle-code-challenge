@@ -7,8 +7,9 @@ import { moviesData } from '../../mocks/mockData';
   styleUrls: ['./movies.component.css']
 })
 export class MoviesComponent implements OnInit {
-  constructor() {}
   movies = moviesData;
+
+  constructor() {}
 
   ngOnInit(): void {}
 }
