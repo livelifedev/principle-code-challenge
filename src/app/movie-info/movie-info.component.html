@@ -1,1 +1,54 @@
-<p>{{ movieInfo.title }}</p>
+<div>
+  <div class="card mt-3">
+    <div class="row">
+      <div class="col-md-4">
+        <img
+          [src]="movieInfo.poster"
+          class="card-img"
+          [alt]="movieInfo.title"
+        />
+      </div>
+      <div class="col-md-8 d-flex align-items-center">
+        <div class="card-body text-center">
+          <h5 class="card-title">{{ movieInfo.title }}</h5>
+          <p class="card-text">({{ movieInfo.year }})</p>
+          <p class="card-text">{{ movieInfo.genre }}</p>
+
+          <div class="card-body text-center">
+            <h6 class="card-title">Showtimes:</h6>
+            <div class="form-group">
+              <select
+                class="form-control"
+                [(ngModel)]="selectedCinema"
+                (change)="selected()"
+              >
+                <option
+                  *ngFor="let option of movieInfo.cinemasPlaying"
+                  [ngValue]="option"
+                  >{{ option.name }}</option
+                >
+              </select>
+            </div>
+            <ul
+              class="list-group list-group-horizontal d-flex justify-content-center"
+            >
+              <li
+                class="list-group-item"
+                *ngFor="let time of selectedShowtimes"
+              >
+                {{ time }}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <form>
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input type="text" id="title" name="title" class="form-control" />
+    </div>
+  </form> -->
+</div>

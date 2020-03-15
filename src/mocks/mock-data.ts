@@ -5,12 +5,23 @@ export const moviesData = [
     year: 2004,
     genre: 'Action|Drama',
     poster: 'http://dummyimage.com/400x600.jpg/ff4444/ffffff',
-    // maybe just have in cinema mock data and query movie by ID, so dont need to copy logic twice
     cinemasPlaying: [
-      { id: 1, name: '', showtimes: ['11:05 AM', '2:56 PM', '6:39 PM'] }
+      {
+        id: 1,
+        name: 'Hoyts Cinemas',
+        showtimes: ['11:05 AM', '2:56 PM', '6:39 PM']
+      },
+      {
+        id: 2,
+        name: 'Event Cinemas',
+        showtimes: ['9:05 AM', '5:40 PM', '9:39 PM']
+      },
+      {
+        id: 3,
+        name: 'IMAX Theatre',
+        showtimes: ['8:05 AM', '1:30 PM', '2:39 PM']
+      }
     ]
-    // movies: [{id: 1, showtimes: ['11:05 AM', '2:56 PM', '6:39 PM'] }]
-    // filter through list with movie id to get times
   },
   {
     id: 2,
@@ -18,7 +29,23 @@ export const moviesData = [
     year: 1997,
     genre: 'Children|Comedy|Fantasy',
     poster: 'http://dummyimage.com/400x600.jpg/cc0000/ffffff',
-    showtimes: ['2:33 PM', '6:39 PM', '2:15 PM']
+    cinemasPlaying: [
+      {
+        id: 1,
+        name: 'Hoyts Cinemas',
+        showtimes: ['10:15 AM', '1:56 PM', '4:39 PM']
+      },
+      {
+        id: 2,
+        name: 'Event Cinemas',
+        showtimes: ['9:05 AM', '3:30 PM', '7:39 PM']
+      },
+      {
+        id: 3,
+        name: 'IMAX Theatre',
+        showtimes: ['10:05 AM', '12:30 PM', '4:00 PM']
+      }
+    ]
   },
   {
     id: 3,
@@ -26,7 +53,23 @@ export const moviesData = [
     year: 1999,
     genre: 'Drama|Romance',
     poster: 'http://dummyimage.com/400x600.jpg/cc0000/ffffff',
-    showtimes: ['12:18 PM', '11:16 AM', '12:44 PM']
+    cinemasPlaying: [
+      {
+        id: 1,
+        name: 'Hoyts Cinemas',
+        showtimes: ['11:05 AM', '1:56 PM', '4:39 PM']
+      },
+      {
+        id: 2,
+        name: 'Event Cinemas',
+        showtimes: ['9:05 AM', '3:30 PM', '7:39 PM']
+      },
+      {
+        id: 3,
+        name: 'IMAX Theatre',
+        showtimes: ['10:05 AM', '12:30 PM', '4:00 PM']
+      }
+    ]
   },
   {
     id: 4,
@@ -34,7 +77,23 @@ export const moviesData = [
     year: 2006,
     genre: 'Comedy',
     poster: 'http://dummyimage.com/400x600.jpg/cc0000/ffffff',
-    showtimes: ['9:47 PM', '5:13 PM', '11:38 PM']
+    cinemasPlaying: [
+      {
+        id: 1,
+        name: 'Hoyts Cinemas',
+        showtimes: ['9:05 AM', '1:56 PM', '4:39 PM']
+      },
+      {
+        id: 2,
+        name: 'Event Cinemas',
+        showtimes: ['8:30 AM', '3:30 PM', '7:39 PM']
+      },
+      {
+        id: 3,
+        name: 'IMAX Theatre',
+        showtimes: ['10:05 AM', '12:30 PM', '4:00 PM']
+      }
+    ]
   },
   {
     id: 5,
@@ -42,7 +101,23 @@ export const moviesData = [
     year: 2007,
     genre: 'Action|Crime|Horror|Thriller',
     poster: 'http://dummyimage.com/400x600.jpg/5fa2dd/ffffff',
-    showtimes: ['1:59 PM', '3:02 PM', '10:53 AM']
+    cinemasPlaying: [
+      {
+        id: 1,
+        name: 'Hoyts Cinemas',
+        showtimes: ['9:05 AM', '1:56 PM', '4:39 PM']
+      },
+      {
+        id: 2,
+        name: 'Event Cinemas',
+        showtimes: ['9:45 AM', '3:30 PM', '7:39 PM']
+      },
+      {
+        id: 3,
+        name: 'IMAX Theatre',
+        showtimes: ['10:05 AM', '12:30 PM', '4:00 PM']
+      }
+    ]
   },
   {
     id: 6,
@@ -50,7 +125,23 @@ export const moviesData = [
     year: 1995,
     genre: 'Comedy',
     poster: 'http://dummyimage.com/400x600.jpg/cc0000/ffffff',
-    showtimes: ['7:19 PM', '7:36 PM', '1:22 PM']
+    cinemasPlaying: [
+      {
+        id: 1,
+        name: 'Hoyts Cinemas',
+        showtimes: ['9:05 AM', '1:56 PM', '4:39 PM']
+      },
+      {
+        id: 2,
+        name: 'Event Cinemas',
+        showtimes: ['9:15 AM', '3:30 PM', '7:39 PM']
+      },
+      {
+        id: 3,
+        name: 'IMAX Theatre',
+        showtimes: ['10:05 AM', '12:30 PM', '4:00 PM']
+      }
+    ]
   },
   {
     id: 7,
@@ -58,7 +149,23 @@ export const moviesData = [
     year: 2009,
     genre: 'Adventure|Comedy|Fantasy',
     poster: 'http://dummyimage.com/400x600.jpg/cc0000/ffffff',
-    showtimes: ['7:58 PM', '6:55 PM', '9:56 PM']
+    cinemasPlaying: [
+      {
+        id: 1,
+        name: 'Hoyts Cinemas',
+        showtimes: ['9:05 AM', '1:56 PM', '4:39 PM']
+      },
+      {
+        id: 2,
+        name: 'Event Cinemas',
+        showtimes: ['8:35 AM', '3:30 PM', '7:39 PM']
+      },
+      {
+        id: 3,
+        name: 'IMAX Theatre',
+        showtimes: ['10:05 AM', '12:30 PM', '4:00 PM']
+      }
+    ]
   },
   {
     id: 8,
@@ -66,7 +173,23 @@ export const moviesData = [
     year: 2002,
     genre: 'Drama',
     poster: 'http://dummyimage.com/400x600.jpg/cc0000/ffffff',
-    showtimes: ['9:52 AM', '5:52 PM', '9:42 PM']
+    cinemasPlaying: [
+      {
+        id: 1,
+        name: 'Hoyts Cinemas',
+        showtimes: ['9:05 AM', '1:56 PM', '4:39 PM']
+      },
+      {
+        id: 2,
+        name: 'Event Cinemas',
+        showtimes: ['8:15 AM', '3:30 PM', '7:39 PM']
+      },
+      {
+        id: 3,
+        name: 'IMAX Theatre',
+        showtimes: ['10:05 AM', '12:30 PM', '4:00 PM']
+      }
+    ]
   },
   {
     id: 9,
@@ -74,7 +197,23 @@ export const moviesData = [
     year: 2006,
     genre: 'Comedy',
     poster: 'http://dummyimage.com/400x600.jpg/5fa2dd/ffffff',
-    showtimes: ['12:38 PM', '5:20 PM', '11:33 PM']
+    cinemasPlaying: [
+      {
+        id: 1,
+        name: 'Hoyts Cinemas',
+        showtimes: ['9:05 AM', '1:56 PM', '4:39 PM']
+      },
+      {
+        id: 2,
+        name: 'Event Cinemas',
+        showtimes: ['10:05 AM', '3:30 PM', '7:39 PM']
+      },
+      {
+        id: 3,
+        name: 'IMAX Theatre',
+        showtimes: ['9:00 AM', '11:30 PM', '6:00 PM']
+      }
+    ]
   },
   {
     id: 10,
@@ -82,6 +221,22 @@ export const moviesData = [
     year: 1984,
     genre: 'Drama',
     poster: 'http://dummyimage.com/400x600.jpg/ff4444/ffffff',
-    showtimes: ['9:12 PM', '5:03 PM', '9:36 PM']
+    cinemasPlaying: [
+      {
+        id: 1,
+        name: 'Hoyts Cinemas',
+        showtimes: ['4:05 AM', '3:56 PM', '6:39 PM']
+      },
+      {
+        id: 2,
+        name: 'Event Cinemas',
+        showtimes: ['9:30 AM', '2:30 PM', '7:30 PM']
+      },
+      {
+        id: 3,
+        name: 'IMAX Theatre',
+        showtimes: ['11:05 AM', '1:30 PM', '3:00 PM']
+      }
+    ]
   }
 ];

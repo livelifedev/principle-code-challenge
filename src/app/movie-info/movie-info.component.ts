@@ -9,7 +9,13 @@ import { moviesData } from '../../mocks/mock-data';
 })
 export class MovieInfoComponent implements OnInit {
   movieInfo;
+  selectedCinema;
+  selectedShowtimes = [];
   activatedRoute: ActivatedRoute;
+
+  selected() {
+    this.selectedShowtimes = this.selectedCinema.showtimes;
+  }
 
   constructor(activatedRoute: ActivatedRoute) {
     this.activatedRoute = activatedRoute;
