@@ -246,6 +246,8 @@ export const cinemasData = [
     id: 1,
     name: 'Hoyts Cinemas',
     location: '9139 Warbler Plaza',
+    opening: '8:00 AM',
+    closing: '11:30 PM',
     image: 'http://dummyimage.com/700x300.jpg/5fa2dd/ffffff',
     movies: [
       {
@@ -304,6 +306,8 @@ export const cinemasData = [
     id: 2,
     name: 'Event Cinemas',
     location: '1926 Maywood Pass',
+    opening: '7:00 AM',
+    closing: '1:30 AM',
     image: 'http://dummyimage.com/700x300.jpg/dddddd/000000',
     movies: [
       {
@@ -362,6 +366,8 @@ export const cinemasData = [
     id: 3,
     name: 'IMAX Theatre',
     location: '1926 Maywood Pass',
+    opening: '8:00 AM',
+    closing: '12:00 AM',
     image: 'http://dummyimage.com/700x300.jpg/cc0000/ffffff',
     movies: [
       {
