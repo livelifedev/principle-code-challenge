@@ -8,13 +8,22 @@ import { moviesData } from '../../mocks/mock-data';
   styleUrls: ['./movie-info.component.css']
 })
 export class MovieInfoComponent implements OnInit {
+  activatedRoute: ActivatedRoute;
   movieInfo;
   selectedCinema;
   selectedShowtimes = [];
-  activatedRoute: ActivatedRoute;
+  showEdit = false;
 
   selected() {
     this.selectedShowtimes = this.selectedCinema.showtimes;
+  }
+
+  onEditClick() {
+    this.showEdit = true;
+  }
+
+  onSubmit() {
+    this.showEdit = false;
   }
 
   constructor(activatedRoute: ActivatedRoute) {

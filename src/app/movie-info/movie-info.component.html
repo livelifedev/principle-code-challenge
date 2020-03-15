@@ -47,9 +47,24 @@
 
   <div class="container-fluid d-flex flex-column  mt-3 mb-5">
     <div class="text-center">
-      <button type="button" class="btn btn-warning">EDIT DETAILS</button>
+      <button
+        *ngIf="!showEdit"
+        type="button"
+        class="btn btn-warning"
+        (click)="onEditClick()"
+      >
+        EDIT DETAILS
+      </button>
+      <button
+        *ngIf="showEdit"
+        type="button"
+        class="btn btn-warning"
+        (click)="onSubmit()"
+      >
+        SAVE CHANGES
+      </button>
     </div>
-    <form class="mt-4">
+    <form *ngIf="showEdit" class="mt-4">
       <div class="form-group row">
         <label for="title" class="col-sm-2 col-form-label col-form-label-lg"
           >Movie Title:</label
