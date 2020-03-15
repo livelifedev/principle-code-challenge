@@ -246,6 +246,7 @@ export const cinemasData = [
     id: 1,
     name: 'Hoyts Cinemas',
     location: '9139 Warbler Plaza',
+    image: 'http://dummyimage.com/700x300.jpg/5fa2dd/ffffff',
     movies: [
       {
         id: 1,
@@ -303,6 +304,7 @@ export const cinemasData = [
     id: 2,
     name: 'Event Cinemas',
     location: '1926 Maywood Pass',
+    image: 'http://dummyimage.com/700x300.jpg/dddddd/000000',
     movies: [
       {
         id: 1,
@@ -360,6 +362,7 @@ export const cinemasData = [
     id: 3,
     name: 'IMAX Theatre',
     location: '1926 Maywood Pass',
+    image: 'http://dummyimage.com/700x300.jpg/cc0000/ffffff',
     movies: [
       {
         id: 1,

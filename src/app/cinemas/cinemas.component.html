@@ -1,1 +1,15 @@
-<p>cinemas works!</p>
+<div>
+  <ul class="list-group d-flex align-items-center">
+    <li class="list-group-item" *ngFor="let cinema of cinemas">
+      <div class="card mb-3">
+        <img [src]="cinema.image" class="card-img-top" [alt]="cinema.name" />
+        <div class="card-body">
+          <h5 class="card-title">{{ cinema.name }}</h5>
+          <a routerLink="/cinema/{{ cinema.id }}" class="btn btn-primary"
+            >Cinema Info</a
+          >
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

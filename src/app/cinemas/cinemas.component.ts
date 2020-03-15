@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { cinemasData } from '../../mocks/mock-data';
 
 @Component({
   selector: 'app-cinemas',
@@ -6,10 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cinemas.component.css']
 })
 export class CinemasComponent implements OnInit {
+  cinemas = cinemasData;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
