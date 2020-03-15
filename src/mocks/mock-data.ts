@@ -240,3 +240,177 @@ export const moviesData = [
     ]
   }
 ];
+
+export const cinemasData = [
+  {
+    id: 1,
+    name: 'Hoyts Cinemas',
+    location: '9139 Warbler Plaza',
+    movies: [
+      {
+        id: 1,
+        title: 'Bonaerense, El',
+        showtimes: ['11:05 AM', '2:56 PM', '6:39 PM']
+      },
+      {
+        id: 2,
+        title: 'Fred Claus',
+        showtimes: ['10:15 AM', '1:56 PM', '4:39 PM']
+      },
+      {
+        id: 3,
+        title: "Princess Ka'iulani",
+        showtimes: ['11:05 AM', '1:56 PM', '4:39 PM']
+      },
+      {
+        id: 4,
+        title: 'Run Ronnie Run',
+        showtimes: ['9:05 AM', '1:56 PM', '4:39 PM']
+      },
+      {
+        id: 5,
+        title: 'Maniac Cop',
+        showtimes: ['9:05 AM', '1:56 PM', '4:39 PM']
+      },
+      {
+        id: 6,
+        title: 'Stiff Upper Lips',
+        showtimes: ['9:05 AM', '1:56 PM', '4:39 PM']
+      },
+      {
+        id: 7,
+        title: 'Life Aquatic with Steve Zissou, The',
+        showtimes: ['9:05 AM', '1:56 PM', '4:39 PM']
+      },
+      {
+        id: 8,
+        title: 'Jezebel',
+        showtimes: ['9:05 AM', '1:56 PM', '4:39 PM']
+      },
+      {
+        id: 9,
+        title: 'Comfort and Joy',
+        showtimes: ['9:05 AM', '1:56 PM', '4:39 PM']
+      },
+      {
+        id: 10,
+        title: 'Bopha!',
+        showtimes: ['4:05 AM', '3:56 PM', '6:39 PM']
+      }
+    ]
+  },
+  {
+    id: 2,
+    name: 'Event Cinemas',
+    location: '1926 Maywood Pass',
+    movies: [
+      {
+        id: 1,
+        title: 'Bonaerense, El',
+        showtimes: ['9:05 AM', '5:40 PM', '9:39 PM']
+      },
+      {
+        id: 2,
+        title: 'Fred Claus',
+        showtimes: ['9:05 AM', '3:30 PM', '7:39 PM']
+      },
+      {
+        id: 3,
+        title: "Princess Ka'iulani",
+        showtimes: ['9:05 AM', '3:30 PM', '7:39 PM']
+      },
+      {
+        id: 4,
+        title: 'Run Ronnie Run',
+        showtimes: ['8:30 AM', '3:30 PM', '7:39 PM']
+      },
+      {
+        id: 5,
+        title: 'Maniac Cop',
+        showtimes: ['9:45 AM', '3:30 PM', '7:39 PM']
+      },
+      {
+        id: 6,
+        title: 'Stiff Upper Lips',
+        showtimes: ['9:15 AM', '3:30 PM', '7:39 PM']
+      },
+      {
+        id: 7,
+        title: 'Life Aquatic with Steve Zissou, The',
+        showtimes: ['8:35 AM', '3:30 PM', '7:39 PM']
+      },
+      {
+        id: 8,
+        title: 'Jezebel',
+        showtimes: ['8:15 AM', '3:30 PM', '7:39 PM']
+      },
+      {
+        id: 9,
+        title: 'Comfort and Joy',
+        showtimes: ['10:05 AM', '3:30 PM', '7:39 PM']
+      },
+      {
+        id: 10,
+        title: 'Bopha!',
+        showtimes: ['9:30 AM', '2:30 PM', '7:30 PM']
+      }
+    ]
+  },
+  {
+    id: 3,
+    name: 'IMAX Theatre',
+    location: '1926 Maywood Pass',
+    movies: [
+      {
+        id: 1,
+        title: 'Bonaerense, El',
+        showtimes: ['8:05 AM', '1:30 PM', '2:39 PM']
+      },
+      {
+        id: 2,
+        title: 'Fred Claus',
+        showtimes: ['10:05 AM', '12:30 PM', '4:00 PM']
+      },
+      {
+        id: 3,
+        title: "Princess Ka'iulani",
+        showtimes: ['10:05 AM', '12:30 PM', '4:00 PM']
+      },
+      {
+        id: 4,
+        title: 'Run Ronnie Run',
+        showtimes: ['10:05 AM', '12:30 PM', '4:00 PM']
+      },
+      {
+        id: 5,
+        title: 'Maniac Cop',
+        showtimes: ['10:05 AM', '12:30 PM', '4:00 PM']
+      },
+      {
+        id: 6,
+        title: 'Stiff Upper Lips',
+        showtimes: ['10:05 AM', '12:30 PM', '4:00 PM']
+      },
+      {
+        id: 7,
+        title: 'Life Aquatic with Steve Zissou, The',
+        showtimes: ['10:05 AM', '12:30 PM', '4:00 PM']
+      },
+      {
+        id: 8,
+        title: 'Jezebel',
+        showtimes: ['10:05 AM', '12:30 PM', '4:00 PM']
+      },
+      {
+        id: 9,
+        title: 'Comfort and Joy',
+        showtimes: ['9:00 AM', '11:30 PM', '6:00 PM']
+      },
+      {
+        id: 10,
+        title: 'Bopha!',
+        showtimes: ['11:05 AM', '1:30 PM', '3:00 PM']
+      }
+    ]
+  }
+];
