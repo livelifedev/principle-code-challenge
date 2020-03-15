@@ -14,15 +14,11 @@ Bootstrap was used to style this application
 
 ## Routes
 
-### / - homepage
-
-### /movies - movies index page, listing all movies
-
-### /movie/:id - individual movie page, showing more information on the movie and allowing editing of details
-
-### /cinemas - cinemas index page, listing all cinemas
-
-### /cinema/:id - individual cinema page, showing more information on a cinema and allowing editing of details
+- / - homepage
+- /movies - movies index page, listing all movies
+- /movie/:id - individual movie page, showing more information on the movie and allowing editing of details
+- /cinemas - cinemas index page, listing all cinemas
+- /cinema/:id - individual cinema page, showing more information on a cinema and allowing editing of details
 
 ## Mock data
 
