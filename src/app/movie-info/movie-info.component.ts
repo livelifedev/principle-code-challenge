@@ -22,7 +22,8 @@ export class MovieInfoComponent implements OnInit {
     this.showEdit = true;
   }
 
-  onSubmit() {
+  onSubmit(formData) {
+    this.movieInfo = { ...this.movieInfo, ...formData.value };
     this.showEdit = false;
   }
 
@@ -35,6 +36,8 @@ export class MovieInfoComponent implements OnInit {
       this.movieInfo = moviesData.find(
         movie => movie.id.toString() === params.id
       );
+      this.selectedCinema = this.movieInfo.cinemasPlaying[0];
+      this.selectedShowtimes = this.selectedCinema.showtimes;
     });
   }
 }

@@ -55,16 +55,13 @@
       >
         EDIT DETAILS
       </button>
-      <button
-        *ngIf="showEdit"
-        type="button"
-        class="btn btn-warning"
-        (click)="onSubmit()"
-      >
-        SAVE CHANGES
-      </button>
     </div>
-    <form *ngIf="showEdit" class="mt-4">
+    <form *ngIf="showEdit" (ngSubmit)="onSubmit(form)" #form="ngForm">
+      <div class="text-center mb-3">
+        <button type="submit" class="btn btn-warning">
+          SAVE CHANGES
+        </button>
+      </div>
       <div class="form-group row">
         <label for="title" class="col-sm-2 col-form-label col-form-label-lg"
           >Movie Title:</label
@@ -73,8 +70,10 @@
           <input
             type="text"
             class="form-control form-control-lg"
+            name="title"
             id="title"
             placeholder="Enter new movie title"
+            [ngModel]="movieInfo.title"
           />
         </div>
       </div>
@@ -87,8 +86,10 @@
           <input
             type="text"
             class="form-control form-control-lg"
+            name="year"
             id="year"
             placeholder="Enter new year of release"
+            [ngModel]="movieInfo.year"
           />
         </div>
       </div>
@@ -101,8 +102,10 @@
           <input
             type="text"
             class="form-control form-control-lg"
+            name="genre"
             id="genre"
             placeholder="Enter one or more genre(s)"
+            [ngModel]="movieInfo.genre"
           />
         </div>
       </div>
