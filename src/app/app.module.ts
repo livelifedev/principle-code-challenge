@@ -9,8 +9,13 @@ import { CinemasComponent } from './cinemas/cinemas.component';
 import { NavComponent } from './nav/nav.component';
 import { MovieInfoComponent } from './movie-info/movie-info.component';
 import { CinemaInfoComponent } from './cinema-info/cinema-info.component';
+import { HomeComponent } from './home/home.component';
 
 const routes = [
+  {
+    path: '',
+    component: HomeComponent
+  },
   {
     path: 'movies',
     component: MoviesComponent
@@ -36,7 +41,8 @@ const routes = [
     CinemasComponent,
     NavComponent,
     MovieInfoComponent,
-    CinemaInfoComponent
+    CinemaInfoComponent,
+    HomeComponent
   ],
   imports: [BrowserModule, FormsModule, RouterModule.forRoot(routes)],
   providers: [],
